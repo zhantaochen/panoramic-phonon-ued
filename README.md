@@ -1,6 +1,6 @@
 ## Panoramic mapping of phonon transport from ultrafast electron diffraction and machine learning
 
-This is the code repository for the paper "Panoramic mapping of phonon transport from ultrafast electron diffraction and machine learning". [https://arxiv.org/pdf/2202.06199.pdf](https://arxiv.org/pdf/2202.06199.pdf). Please direct any questions about codes to Zhantao (zhantao@mit.edu).
+This is the code repository for the paper "Panoramic mapping of phonon transport from ultrafast electron diffraction and machine learning" ([https://arxiv.org/pdf/2202.06199.pdf](https://arxiv.org/pdf/2202.06199.pdf)). Please direct any questions about codes to Zhantao (zhantao@mit.edu).
 
 ## Key python files
 `adjoint_bte/torchdiffeq`
