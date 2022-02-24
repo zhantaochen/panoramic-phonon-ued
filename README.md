@@ -4,7 +4,7 @@ This is the code repository for the paper "Panoramic mapping of phonon transport
 
 ## Key python files
 `adjoint_bte/torchdiffeq`
-- Modified from `torchdiffeq` of the commit id `4678a03aaeec9ad7daa9888d4e7988d17d011199` [https://github.com/rtqichen/torchdiffeq/tree/4678a03aaeec9ad7daa9888d4e7988d17d011199](https://github.com/rtqichen/torchdiffeq/tree/4678a03aaeec9ad7daa9888d4e7988d17d011199). The major change is to reuse the calculated phonon energy distribution function in the backward pass. This will significantly increase memory usage but provide better numerical stability.
+- Modified from `torchdiffeq` of the commit id `4678a03aaeec9ad7daa9888d4e7988d17d011199` [https://github.com/rtqichen/torchdiffeq/tree/4678a03aaeec9ad7daa9888d4e7988d17d011199](https://github.com/rtqichen/torchdiffeq/tree/4678a03aaeec9ad7daa9888d4e7988d17d011199). The major modifications are mainly made inside `adjoint.py` and `solvers.py`, which reuse the calculated phonon energy distribution function in the backward pass. This will significantly increase memory usage but provide better numerical stability during the backward pass.
 
 `adjoint_bte/phonon_bte.py`
 - defines the forward model of phonon Boltzmann transport equation for a specified layer and material
